@@ -1,0 +1,19 @@
+ethereum_rpc = "https://ethereum-hoodi-rpc.publicnode.com"
+drosera_rpc = "https://relay.hoodi.drosera.io"
+eth_chain_id = 560048
+drosera_address = "0x91cB447BaFc6e0EA0F4Fe056F5a9b1F14bb06e5D"
+
+[traps]
+
+[traps.avs_resilience]
+path = "out/AVSResilienceTrap.sol/AVSResilienceTrap.json"
+response_contract = "0xa4b9e7115284fda76093b1925dc2eaa98814eb5e"
+response_function = "respondWithAVSFailure(address,uint8)"
+cooldown_period_blocks = 30
+min_number_of_operators = 1
+max_number_of_operators = 3
+block_sample_size = 10
+private_trap = true
+whitelist = ["0x3834D78AB25eb2BA2D2634f884D6A41001fa786A"]
+address = "0x9391e5730ad631002747c18aD2325422a3d591E8"
+
